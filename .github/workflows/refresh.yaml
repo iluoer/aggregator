@@ -52,20 +52,17 @@ jobs:
               echo "Error: environment 'GIST_PAT' cannot be empty"
               exit 1
           fi
-
           if [ -z "$GIST_LINK" ]; then
               echo "Error: environment 'GIST_LINK' cannot be empty"
               exit 1
           fi
-
           LINK_PARTS=$(echo "$GIST_LINK" | awk -F'/' 'NF==2 && $1!="" && $2!=""')
           if [ -z "$LINK_PARTS" ]; then
               echo "Error: environment 'GIST_LINK' is not valid, should be 'username/gist_id' format"
               exit 1
           fi
-
       - name: Refresh
-        run: python -u subscribe/collect.py --all --refresh --overwrite --skip
+        run: python -u subscribe/collect.py --all --refresh --overwrite --skip --targets "quanx" "surge" "loon"
 
       - name: Timestamp
         run: date
