@@ -1,191 +1,136 @@
 {
-    "domains": [
-        {
-            "name": "",
-            "sub": [],
-            "domain": "",
-            "enable": true,
-            "rename": "",
-            "include": "",
-            "exclude": "",
-            "push_to": [],
-            "ignorede": true,
-            "liveness": true,
-            "rate": 2.5,
-            "count": 2,
-            "coupon": "",
-            "secure": false,
-            "renew": {
-                "account": [
-                    {
-                        "email": "",
-                        "passwd": "",
-                        "ticket": {
-                            "enable": true,
-                            "autoreset": false,
-                            "subject": "",
-                            "message": "",
-                            "level": 1
-                        }
-                    }
-                ],
-                "plan_id": 3,
-                "package": "",
-                "method": 1,
-                "coupon_code": "",
-                "chatgpt": {
-                    "enable": true,
-                    "regex": "",
-                    "operate": "IN"
-                }
-            }
-        }
-    ],
-    "crawl": {
-        "enable": true,
-        "exclude": "",
-        "threshold": 5,
-        "singlelink": true,
-        "persist": {
-            "subs": "crawledsubs",
-            "proxies": "crawledproxies"
-        },
-        "config": {
-            "rename": "",
-            "include": "",
-            "exclude": "",
-            "xxxxxxx": ""
-        },
-        "telegram": {
-            "enable": true,
-            "pages": 5,
-            "exclude": "",
-            "users": {
-                "channel": {
-                    "include": "",
-                    "exclude": "",
-                    "config": {
-                        "rename": "",
-                        "xxxxxx": ""
-                    },
-                    "push_to": []
-                }
-            }
-        },
-        "google": {
-            "enable": false,
-            "exclude": "",
-            "notinurl": [],
-            "push_to": []
-        },
-        "github": {
-            "enable": true,
-            "pages": 2,
-            "push_to": [],
-            "exclude": "",
-            "spams": []
-        },
-        "twitter": {
-            "enable": true,
-            "users": {
-                "username": {
-                    "enable": true,
-                    "num": 30,
-                    "include": "",
-                    "exclude": "",
-                    "config": {
-                        "rename": "",
-                        "xxxxxx": ""
-                    },
-                    "push_to": []
-                }
-            }
-        },
-        "repositories": [
-            {
-                "enable": false,
-                "username": "",
-                "repo_name": "",
-                "commits": 3,
-                "exclude": "",
-                "push_to": []
-            }
-        ],
-        "pages": [
-            {
-                "enable": true,
-                "url": "",
-                "include": "",
-                "exclude": "",
-                "config": {
-                    "rename": ""
-                },
-                "push_to": []
-            }
-        ],
-        "scripts": [
-            {
-                "enable": false,
-                "script": "file#function",
-                "params": {
-                    "persist": {
-                        "fileid": ""
-                    },
-                    "any": "xxx",
-                    "config": {
-                        "enable": true,
-                        "liveness": true,
-                        "exclude": "",
-                        "rename": "",
-                        "push_to": []
-                    }
-                }
-            }
-        ]
-    },
-    "groups": {
-        "xxx": {
-            "emoji": true,
-            "list": true,
-            "targets": {
-                "clash": "xxx-clash",
-                "singbox": "xxx-singbox",
-                "v2ray": "xxx-v2ray"
-            },
-            "regularize": {
-                "enable": false,
-                "locate": true,
-                "bits": 2
-            }
-        }
-    },
-    "storage": {
-        "engine": "xxx",
-        "base": "https://api.xxx.com",
-        "domain": "https://xxx.com",
-        "items": {
-            "xxx-clash": {
-                "username": "",
-                "folderid": "",
-                "fileid": ""
-            },
-            "xxx-singbox": {
-                "fileid": ""
-            },
-            "xxx-v2ray": {
-                "username": "",
-                "fileid": ""
-            },
-            "crawledsubs": {
-                "username": "",
-                "folderid": "",
-                "fileid": ""
-            },
-            "crawledproxies": {
-                "username": "",
-                "folderid": "",
-                "fileid": ""
-            }
-        }
+  "domains": [
+    {
+      "name": "机场",
+      "sub": [
+        "https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml",
+        "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/security/tls",
+        "https://www.vfast.life/api/v1/client/subscribe?token=101939ce059922f192b4f3478ae67aa9",
+        "https://vvs.e54.site/api/v1/client/subscribe?token=6d637ec4b05aa54e4c6f8117d3ade3aa",
+        "https://ch.vfkum.website/api/v1/client/subscribe?token=8c5d6e5c2f0db74f692bb147429ed4f6",
+        "https://ch.owokkvsxks.store/api/v1/client/subscribe?token=bb1001e0a31a501449fa6377867f654e",
+        "https://terfghtll.dashuai.us/api/v1/client/subscribe?token=59161cb28288ed418effed5f6aba6ed3",
+        "https://ch.vfkum.website/api/v1/client/subscribe?token=40f409fbe34e9a77fd2b60d797341f8a"
+      ],
+      "domain": "github.com",
+      "enable": false,
+      "rename": "",
+      "include": "",
+      "exclude": "",
+      "push_to": [],
+      "ignorede": true,
+      "liveness": true,
+      "rate": 2.5,
+      "count": 2,
+      "coupon": "",
+      "secure": false
     }
+  ],
+  "plan_id": 3,
+  "package": "",
+  "method": 1,
+  "coupon_code": "",
+  "chatgpt": {
+    "enable": false,
+    "regex": "",
+    "operate": "IN"
+  },
+  "crawl": {
+    "enable": true,
+    "exclude": "",
+    "threshold": 5,
+    "singlelink": true,
+    "persist": {
+      "subs": "crawledsubs",
+      "proxies": "crawledproxies"
+    },
+    "config": {
+      "rename": "",
+      "include": "",
+      "exclude": "",
+      "xxxxxxx": ""
+    },
+    "telegram": {
+      "enable": true,
+      "pages": 5,
+      "exclude": "",
+      "users": {
+        "stymei": {
+          "include": "机场|clash|订阅",
+          "exclude": "试用|免费",
+          "config": {
+            "rename": "TG机场源"
+          },
+          "push_to": [
+            "12-clash"
+          ]
+        }
+      }
+    },
+    "google": {
+      "enable": false,
+      "exclude": "",
+      "notinurl": [],
+      "push_to": []
+    },
+    "github": {
+      "enable": true,
+      "pages": 2,
+      "push_to": [
+        "12-clash"
+      ],
+      "exclude": "",
+      "spams": []
+    },
+    "twitter": {
+      "enable": false,
+      "users": {}
+    },
+    "repositories": [],
+    "pages": [],
+    "scripts": []
+  },
+  "groups": {
+    "12-clash": {
+      "emoji": true,
+      "list": true,
+      "targets": {
+        "clash": "12-clash",
+        "singbox": "23-singbox",
+        "v2ray": "45-v2ray"
+      },
+      "regularize": {
+        "enable": true,
+        "locate": true,
+        "bits": 2
+      }
+    }
+  },
+  "storage": {
+    "engine": "gist",
+    "base": "https://api.github.com",
+    "domain": "https://gist.githubusercontent.com",
+    "items": {
+      "12-clash": {
+        "gistid": "6213944b7003519930b56d7fc88db2e3",
+        "filename": "gclash.yaml"
+      },
+      "23-singbox": {
+        "gistid": "6213944b7003519930b56d7fc88db2e3",
+        "filename": "gclash.yaml"
+      },
+      "45-v2ray": {
+        "gistid": "6213944b7003519930b56d7fc88db2e3",
+        "filename": "gclash.yaml"
+      },
+      "crawledsubs": {
+        "gistid": "6213944b7003519930b56d7fc88db2e3",
+        "filename": "crawledsubs.yaml"
+      },
+      "crawledproxies": {
+        "gistid": "6213944b7003519930b56d7fc88db2e3",
+        "filename": "crawledproxies.yaml"
+      }
+    }
+  }
 }
